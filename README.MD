@@ -1,6 +1,21 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Righteous&size=80&duration=3000&pause=1000&color=F6A623&center=true&vCenter=true&width=600&height=120&lines=🐾+PetShop" alt="PetShop" />
+<svg width="600" height="110" viewBox="0 0 600 110" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F6A623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F97316;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="300" y="75" font-family="Georgia, serif" font-size="72" font-weight="bold"
+    fill="url(#grad)" text-anchor="middle" letter-spacing="8">
+    PETSHOP
+  </text>
+  <text x="300" y="100" font-family="Georgia, serif" font-size="14"
+    fill="#aaaaaa" text-anchor="middle" letter-spacing="3">
+    🐾 gestão com carinho
+  </text>
+</svg>
 
 ### 🐾 Sistema completo de gestão para petshops modernos
 
