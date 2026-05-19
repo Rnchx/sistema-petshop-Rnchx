@@ -1,13 +1,6 @@
 <div align="center">
 
-```
-██████╗ ███████╗████████╗███████╗██╗  ██╗ ██████╗ ██████╗
-██╔══██╗██╔════╝╚══██╔══╝██╔════╝██║  ██║██╔═══██╗██╔══██╗
-██████╔╝█████╗     ██║   ███████╗███████║██║   ██║██████╔╝
-██╔═══╝ ██╔══╝     ██║   ╚════██║██╔══██║██║   ██║██╔═══╝
-██║     ███████╗   ██║   ███████║██║  ██║╚██████╔╝██║
-╚═╝     ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝
-```
+<img src="https://readme-typing-svg.demolab.com?font=Righteous&size=80&duration=3000&pause=1000&color=F6A623&center=true&vCenter=true&width=600&height=120&lines=🐾+PetShop" alt="PetShop" />
 
 ### 🐾 Sistema completo de gestão para petshops modernos
 
