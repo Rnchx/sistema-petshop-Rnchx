@@ -1,0 +1,305 @@
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #0d0d0d;
+    color: #ffffff;
+}
+
+/* ========================================
+   ILUMINAÇÃO
+======================================== */
+
+.home-light {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse 45% 38% at 50% 44%,
+        #c9a45c12,
+        transparent
+    );
+}
+
+.home-top-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    pointer-events: none;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #c9a45c33,
+        transparent
+    );
+}
+
+/* ========================================
+   ELEMENTOS DECORATIVOS
+======================================== */
+
+.home-circle {
+    position: absolute;
+    border: 1px solid #c9a45c;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.home-circle-left {
+    top: 2rem;
+    left: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-color: #c9a45c09;
+}
+
+.home-circle-right {
+    right: 2.5rem;
+    bottom: 2.5rem;
+    width: 10rem;
+    height: 10rem;
+    border-color: #c9a45c06;
+}
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+.home-content {
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 28rem;
+
+    padding: 4rem 1.75rem;
+
+    text-align: center;
+}
+
+/* ========================================
+   LOGO
+======================================== */
+
+.home-logo {
+    width: 16rem;
+
+    user-select: none;
+
+    filter: drop-shadow(
+        0 0 24px rgba(201, 164, 92, 0.18)
+    );
+}
+
+/* ========================================
+   SEPARADOR
+======================================== */
+
+.home-divider {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 220px;
+
+    gap: 0.75rem;
+
+    margin-top: 2rem;
+}
+
+.home-divider span {
+    height: 1px;
+    flex: 1;
+}
+
+.home-divider span:first-child {
+    background: linear-gradient(
+        to right,
+        transparent,
+        #c9a45c59
+    );
+}
+
+.home-divider span:last-child {
+    background: linear-gradient(
+        to left,
+        transparent,
+        #c9a45c59
+    );
+}
+
+.home-divider svg {
+    font-size: 11px;
+    color: #c9a45ccc;
+}
+
+/* ========================================
+   SUBTÍTULO
+======================================== */
+
+.home-subtitle {
+    margin-top: 1rem;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 0.68rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+
+    color: #d6bc82;
+}
+
+/* ========================================
+   BOTÕES DE ACESSO
+======================================== */
+
+.access-buttons {
+    display: grid;
+
+    width: 100%;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0.625rem;
+
+    margin-top: 1.25rem;
+}
+
+.access-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 3.5rem;
+
+    gap: 0.625rem;
+
+    padding: 0.75rem;
+
+    border: 1px solid #c9a45c33;
+    border-radius: 0.5rem;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    color: #e5e5e5;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.access-button:hover {
+    transform: translateY(-2px);
+
+    border-color: #c9a45c8c;
+
+    background: rgba(201, 164, 92, 0.055);
+
+    color: #ffffff;
+}
+
+.access-button:focus-visible {
+    outline: 2px solid #c9a45c;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   ÍCONE
+======================================== */
+
+.access-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.72rem;
+
+    color: #c9a45c;
+
+    transition: transform 0.3s ease;
+}
+
+.access-button:hover .access-icon {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   TEXTO
+======================================== */
+
+.access-title {
+    white-space: nowrap;
+}
+
+/* ========================================
+   SETA
+======================================== */
+
+.access-arrow {
+    font-size: 0.55rem;
+
+    color: transparent;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.access-button:hover .access-arrow {
+    transform: translateX(2px);
+
+    color: #c9a45ccc;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (min-width: 640px) {
+    .home-content {
+        max-width: 28rem;
+    }
+
+    .home-logo {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-content {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .home-logo {
+        width: 14rem;
+    }
+
+    .access-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .access-button {
+        min-height: 3.25rem;
+    }
+}
